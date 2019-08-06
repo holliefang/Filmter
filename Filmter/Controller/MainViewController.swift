@@ -70,6 +70,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
 //        appDelegate.deleteData()
         
         do {
