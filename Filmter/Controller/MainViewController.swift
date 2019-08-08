@@ -126,9 +126,7 @@ class MainViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         navigationItem.leftBarButtonItem = editButtonItem
         importPhotoToEditButton.backgroundColor = UIColor.FilmterThemeColor.dark
         importPhotoToEditButton.tintColor = UIColor.FilmterThemeColor.light
-        
-        
-        
+
         toggleEditBtn()
     }
     private func setupCollectionView(for collection: UICollectionView) {
@@ -425,12 +423,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
 //
 //
         if collectionView == photoCollectionView {
-//            let width = (photoCollectionView.bounds.width - totalSpacing) / totalItemPerRow
-//            let height = (photoCollectionView.bounds.height - totalSpacing) / totalItemPerRow
-//            print(height, "when the minLineSpacing is \(PhotoSize.minLineSpacing)")
-//            print(width, "wtf")
-//            return CGSize(width: width,
-//                          height: height)
+
             let width = collectionView.bounds.width
             let height = collectionView.bounds.height
             
@@ -440,15 +433,11 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
                 return CGSize(width: width / 3, height: width / 3 * 1.6)
             }
             
-//            print("wwwwwwwwwwwww \(collectionView.bounds.width)")
-//            print("hhhhhhhhhhhhh \(collectionView.bounds.height)")
-//            return CGSize(width: width, height: height)
-        
         
         
         } else {
             
-            let width: CGFloat = (view.frame.width / 2.5) - AlbumSize.leftEdge
+            let width: CGFloat = (view.frame.width - AlbumSize.leftEdge) / 2.5
             let height: CGFloat = albumCollectionView.frame.height - (AlbumSize.topEdge * 2)
             
             return CGSize(width: width, height: height)
@@ -461,10 +450,6 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             
             return UIEdgeInsets.zero
 
-//            return UIEdgeInsets(top: PhotoSize.topEdge,
-//                                left: PhotoSize.leftEdge,
-//                                bottom: PhotoSize.bottomEdge,
-//                                right: PhotoSize.rightEdge)
         }
         return UIEdgeInsets(top: AlbumSize.topEdge,
                             left: AlbumSize.leftEdge,

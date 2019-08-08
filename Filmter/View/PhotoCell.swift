@@ -13,6 +13,8 @@ class PhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
+            imageView.layer.borderWidth = 0.87
+            imageView.layer.borderColor = UIColor.darkGray.cgColor
         }
     }
     @IBOutlet weak var selectionImage: UIImageView!
@@ -39,18 +41,7 @@ class PhotoCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-//        print("called layout subview")
-//        
-//        backgroundColor = .clear // very important
-//        layer.masksToBounds = false
-//        layer.shadowOpacity = 0.5
-//        layer.shadowRadius = 2
-//        layer.shadowOffset = CGSize(width: 5, height: 5)
-//        layer.shadowColor = UIColor.white.cgColor
-//
-//        // add corner radius on `contentView`
-//        contentView.backgroundColor = .white
-//        contentView.layer.cornerRadius = 8
+
         
     }
     

@@ -24,6 +24,8 @@ class EditorViewController: UIViewController {
             if imageView.image == nil {
 //                imageView.image = UIImage(named: "TEST")
                 imageView.image = imageViewContainer
+//                imageView.contentMode = .scaleAspectFit
+//                imageView.backgroundColor = .orange
             }
         }
     }
@@ -65,6 +67,13 @@ class EditorViewController: UIViewController {
     }
     
     @objc func handleSave() {
+        if bottomSubtitleTextField.text != nil {
+            bottomSubtitleTextField.text = topSubtitleTextField.text
+            topSubtitleTextField.isHidden = true
+            bottomSubtitleTextField.isHidden = false
+            
+        }
+        
         editedPhoto = backgroundView.asImage()
         sentEditedPhotoBack?(editedPhoto!)
         navigationController?.popViewController(animated: true)
@@ -243,7 +252,9 @@ extension EditorViewController: UITextFieldDelegate {
     }
     
 //    func textFieldDidEndEditing(_ textField: UITextField) {
-//        
+//        print("did end editing")
+//        bottomSubtitleTextField.text = topSubtitleTextField.text
+//        topSubtitleTextField.isHidden = true
 //        if subTextFieldBottomConstraint.constant > btmConstraint {
 //        subTextFieldBottomConstraint.constant = btmConstraint
 //        }

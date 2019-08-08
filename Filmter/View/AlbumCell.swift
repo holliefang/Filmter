@@ -13,7 +13,12 @@ class AlbumCell: UICollectionViewCell {
     static let cellID = "Album Cell"
     
     @IBOutlet weak var viewBehind: UIView!
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.layer.borderWidth = 1
+            imageView.layer.borderColor = UIColor.black.cgColor
+        }
+    }
     @IBOutlet weak var selectionImage: UIImageView!
     
     var isEditing: Bool = false {
@@ -74,10 +79,10 @@ class AlbumCell: UICollectionViewCell {
         let width = frame.width
         let height = frame.height
         
-        viewBehind.frame = CGRect(x: 8, y: 8, width: width - 32, height: height - 16)
+        viewBehind.frame = CGRect(x: 24, y: 8, width: width - 32, height: height - 16)
         viewBehind.layer.shadowOpacity = 1
         viewBehind.layer.shadowRadius = 0
-        viewBehind.layer.shadowOffset = CGSize(width: 16, height: 8)
+        viewBehind.layer.shadowOffset = CGSize(width: 8, height: 8)
         viewBehind.layer.shadowColor = UIColor.FilmterThemeColor.purpleShadow.cgColor
         
         viewBehind.layer.borderWidth = 0.5
