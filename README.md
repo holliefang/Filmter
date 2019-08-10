@@ -1,4 +1,4 @@
-## Filmter
+## Filmter #### (publishing on appstore)
 
 Create movie-style photos to make stories and memories!
 
