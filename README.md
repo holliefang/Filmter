@@ -1,7 +1,7 @@
 ## Filmter 
 (on appstore)
-![image](downloadOnAppStoreBadge.jpg)
-![test](https://apps.apple.com/tw/app/filmter/id1476130568?l=en)
+[![image](downloadOnAppStoreBadge.jpg)](https://apps.apple.com/tw/app/filmter/id1476130568?l=en)
+[test](https://apps.apple.com/tw/app/filmter/id1476130568?l=en)
 
 Create movie-style photos to make stories and memories!
 
