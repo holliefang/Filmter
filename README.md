@@ -1,5 +1,6 @@
 ## Filmter 
-(publishing on appstore)
+(on appstore)
+![image](Download_on_the_App_Store_Badge_US-UK_blk_092917.eps)
 
 Create movie-style photos to make stories and memories!
 
