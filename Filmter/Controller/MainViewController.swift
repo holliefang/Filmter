@@ -427,17 +427,17 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             let width = collectionView.bounds.width
             let height = collectionView.bounds.height
             
-            if height < width {
-                return CGSize(width: width / 3, height: width / 3 * 1.2)
-            } else {
-                return CGSize(width: width / 3, height: width / 3 * 1.6)
-            }
-            
+//            if height < width {
+//                return CGSize(width: width / 3, height: width / 3 * 1.2)
+//            } else {
+//                return CGSize(width: width / 3, height: width / 3 * 1.6)
+//            }
+            return CGSize(width: width / 3, height: height / 2)
         
         
         } else {
             
-            let width: CGFloat = (view.frame.width - AlbumSize.leftEdge) / 2.5
+            let width: CGFloat = (view.frame.width - AlbumSize.leftEdge) / 2.6
             let height: CGFloat = albumCollectionView.frame.height - (AlbumSize.topEdge * 2)
             
             return CGSize(width: width, height: height)
@@ -591,6 +591,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
                 }
             }
             deleteBtn.isEnabled = selecedNumberOfCollectionView?.count == 0 ? false : true
+            
         } else {
             addToAlbumBtn.isEnabled = false
             deleteBtn.isEnabled = false
