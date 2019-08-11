@@ -1,6 +1,6 @@
 ## Filmter 
 (on appstore)
-![image](downloadOnAppStoreBadge.jpeg)
+![image](downloadOnAppStoreBadge.jpg)
 
 Create movie-style photos to make stories and memories!
 
