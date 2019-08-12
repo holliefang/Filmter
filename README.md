@@ -11,7 +11,7 @@ Create movie-style photos to make stories and memories!
 - Create unique photos by applying filter effects and subtitles.
 - Place photos in order by simple drag.
 - Create photo collection in classic display.
-- Share your work to family and friends.
+- Share your work with family and friends.
 
 
 #### UIKit
